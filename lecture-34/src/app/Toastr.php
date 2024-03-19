@@ -3,9 +3,13 @@
 namespace App;
 
 class Toastr {
-    public array $slices = [];
-    public int $size = 2;
+    public array $slices;
+    public int $size;
 
+    public function __construct(int $x) {
+        $this->slices = [];
+        $this->size = 2;
+    }
     public function addSlice(string $slice): void {
         if(count($this->slices) < $this->size) {
             $this->slices[] = $slice;

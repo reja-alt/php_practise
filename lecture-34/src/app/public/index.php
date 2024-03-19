@@ -5,7 +5,7 @@ require __DIR__ . '/../../vendor/autoload.php';
 use App\Toastr;
 use App\ToastrPro;
 
-$toastr = new ToastrPro();
+$toastr = new ToastrPro('foo');
 $toastr->addSlice('bread');
 $toastr->addSlice('bread');
 $toastr->addSlice('bread');
